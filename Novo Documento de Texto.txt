@@ -1,0 +1,26 @@
+Coisas importantes sobre JavaScript!
+
+ 			Eventos DOM
+
+exemplo para trocar a cor de uma div ao passar o mouse em cima:
+
+html: div#area
+
+js: 
+var a = window.document.getElementById('area')
+
+a.addEventListener('mouseenter'. entrar)
+
+function entrar(){
+a.innerText = 'Entrou!'
+a.style.background-color:red
+}
+
+			CONDIÇÕES
+
+var idade = 25
+if(idade >= 18){
+	console.log('Maior de idade')
+} else{
+	console.log('Menor de idade')
+}

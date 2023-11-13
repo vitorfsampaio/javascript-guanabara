@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo</title>
+</head>
+<body>
+    <h1>Onde você nasceu?</h1>
+    Eu nasci em: <input type="text" name="pais" id="pais">
+    <input type="button" value="Conferir" onclick="enviar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enviar(){
+            var lugar = document.querySelector('input#pais')
+            var pais = (lugar.value)
+            var res = document.querySelector('div#res')
+            if(pais == "Brasil"){
+                res.innerHTML = 'Que legal, você é brasileiro!'
+            } else{
+                res.innerHTML = 'Você é gringo! Parece ser um bom país.'
+            }
+        }
+
+    </script>
+</body>
+</html>

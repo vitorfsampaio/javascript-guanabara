@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraindo números</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        input#num1, input#num2{
+            width: 80px;
+        }
+
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos subtrair valores</h1>
+    <input type="number" name="num1" id="num1"> -
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id="res">Resultado:</div>
+
+    <script>
+        function subtrair(){
+        var v1 = window.document.getElementById('num1')
+        var v2 = window.document.getElementById('num2')
+        var res = window.document.querySelector('div#res')
+
+        var op1 = Number(v1.value)
+        var op2 = Number(v2.value)
+
+        var s = op1 - op2
+
+        res.innerHTML = `A subtração entre ${op1} e ${op2} é igual a <strong>${s}</strong>`
+    }
+    </script>
+</body>
+</html>
